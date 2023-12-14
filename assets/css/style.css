@@ -82,7 +82,7 @@ header {
 }
 
 section {
-  min-height: 100vh;
+  height: fit-content;
   padding: 2rem 9%;
 }
 
@@ -892,7 +892,7 @@ header .navbar ul li a:hover {
 /* experience section starts */
 .experience .timeline {
   position: relative;
-  max-width: 1200px;
+  min-width: 1000px;
   margin: 0 auto;
 }
 
@@ -900,6 +900,7 @@ header .navbar ul li a:hover {
   content: "";
   position: absolute;
   width: 6px;
+  height: 260px;
   background: #020133;
   top: 0;
   bottom: 0;
@@ -1004,6 +1005,7 @@ header .navbar ul li a:hover {
 .morebtn {
   display: flex;
   justify-content: center;
+  margin-top: 10rem;
 }
 
 .morebtn .btn {
@@ -1175,8 +1177,8 @@ form .message textarea {
   border: 2px solid rgb(115, 3, 167);
 }
 
-.field input:focus~i,
-.message textarea:focus~i {
+.field input:focus ~ i,
+.message textarea:focus ~ i {
   color: rgb(115, 3, 167);
 }
 
